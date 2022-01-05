@@ -1,0 +1,28 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run tests
+        run: python manage.py test
+        env:
+          CLOUDINARY_URL: cloudinary://xxx:xxx@xxx
+          GOOGLE_AUTH_CLIENT_ID: MOCK_GOOGLE_AUTH_CLIENT_ID
+          GOOGLE_AUTH_SECRET: MOCK_GOOGLE_AUTH_SECRET
+          GOOGLE_API_KEY: MOCK_GOOGLE_API_KEY

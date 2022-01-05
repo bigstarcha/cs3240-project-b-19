@@ -1,0 +1,62 @@
+{% extends "core/base.html" %} {% block content %}
+{% load static %}
+
+<style>
+  .bottom-spacing {
+    margin-bottom: 1rem;
+  }
+
+</style>
+
+<div class="my-4">
+  <div class="mt-4">
+    <h1>How to Submit a Listing</h1>
+
+    <section>
+      <iframe width="960" height="540" src="https://www.youtube.com/embed/IeKh-H5C8zU" controls>
+      </iframe>
+      <p class="bottom-spacing"> Above is a video tutorial which walks through the entire process of submitting a listing. </p>
+    </section>
+
+    <h2>How do you submit a listing?</h2>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-listing-page-1.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> To start off, ensure that you are on the home page of the website, where on the left side of the page you can see all of the listing locations
+        on a Google map, and on the right side of the page, you can see all of the listings themselves. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-listing-page-2.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> Navigate to the top bar and click on the "Landlord" drop-down menu. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-listing-page-3.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> Click the "Submit a Listing" option under the drop-down menu to enter the listing submission page. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-listing-page-4.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> Once you are on the listing submission page, enter in the necessary information for your listing. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-listing-page-5b.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> Once you have entered in all of the necessary information for your listing, click the Submit button. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-listing-page-6.png'%}" width="960" height="540">
+      </img>
+      <p> Your listing is now published! </p>
+    </section>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,2216 @@
+[
+  {
+    "model": "core.listing",
+    "pk": 1,
+    "fields": {
+      "name": "214-C 14th Street",
+      "latitude": 38.035159,
+      "longitude": -78.498671,
+      "address1": "214 14th Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "485.00",
+      "image": "image/upload/v1636581613/0f82f87da743a2fdc66405b7127cf79c.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 2,
+    "fields": {
+      "name": "The Barringer",
+      "latitude": 38.030904,
+      "longitude": -78.5027,
+      "address1": "428 Monroe Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1855.00",
+      "image": "image/upload/v1636760931/e5fc72fe2f33ed5f16da312c66a6987f.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 3,
+    "fields": {
+      "name": "1 Bedroom Close to UVA",
+      "latitude": 38.028394,
+      "longitude": -78.506347,
+      "address1": "1 Valley Circle",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "950.00",
+      "image": "image/upload/v1636581681/79815ed2b227b62771f0f9a10424e719.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 4,
+    "fields": {
+      "name": "Stunning Stone House on Park Street",
+      "latitude": 38.0423179,
+      "longitude": -78.4708209,
+      "address1": "1021 Park Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 5,
+      "num_bathrooms": 5,
+      "rent": "4500.00",
+      "image": "image/upload/v1636581677/53f853c20d220a06b2a228c29d3ef6dc.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 5,
+    "fields": {
+      "name": "507 16th Street Apartments",
+      "latitude": 38.040604,
+      "longitude": -78.498763,
+      "address1": "507 16th Street Northwest",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1040.00",
+      "image": "image/upload/v1636581682/a00fd4f4c72054212812b16dbc54bb72.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 6,
+    "fields": {
+      "name": "Duplex Available 2022-2023",
+      "latitude": 38.0405124,
+      "longitude": -78.4971618,
+      "address1": "604 15th Street Northwest",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1175.00",
+      "image": "image/upload/v1636581679/21f75ba6bb294e426dd73b06a6866491.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 7,
+    "fields": {
+      "name": "2 Bedrooms Available 2022-2023",
+      "latitude": 38.0403367,
+      "longitude": -78.497614,
+      "address1": "1500 Grady Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "975.00",
+      "image": "image/upload/v1636581688/a933a3653a04a794ec4eed6829d69b86.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 8,
+    "fields": {
+      "name": "101 Westerly Avenue",
+      "latitude": 38.0260624,
+      "longitude": -78.5227136,
+      "address1": "101 Westerly Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2599.00",
+      "image": "image/upload/v1636581681/dd5d8c52219b8a537f8b4c02f6e19d02.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 9,
+    "fields": {
+      "name": "One Bedroom Apartment Close to UVA with Reserved Parking",
+      "latitude": 38.0416777,
+      "longitude": -78.5018939,
+      "address1": "1885 University Circle Apt #C",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "825.00",
+      "image": "image/upload/v1636581686/ac16d9c7b8a3a4d7fbdc582e8c0cea09.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 10,
+    "fields": {
+      "name": "The Barringer",
+      "latitude": 38.030904,
+      "longitude": -78.5027,
+      "address1": "428 Monroe Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1585.00",
+      "image": "image/upload/v1636760934/4d4c117b913654026145dd1e174d1960.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 11,
+    "fields": {
+      "name": "4 Bedroom Apartments Available Near JPA and Scott Stadium",
+      "latitude": 38.0270805,
+      "longitude": -78.5153795,
+      "address1": "109 Clarke Court",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2450.00",
+      "image": "image/upload/v1636581678/4b5c037e24b029aec3447c4eb0ff54a1.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 12,
+    "fields": {
+      "name": "Unique 2 Bedroom Duplex Available with Parking Near UVA",
+      "latitude": 38.025506,
+      "longitude": -78.521905,
+      "address1": "2515 Plateau Road Apt #A",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1375.00",
+      "image": "image/upload/v1636581680/946ccec1f5754a8c8a521f5ccc3020de.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 13,
+    "fields": {
+      "name": "1535 Gordon Ave - Apartment Near the Corner!",
+      "latitude": 38.0400413,
+      "longitude": -78.4984634,
+      "address1": "1535 Gordon Ave Apt #C",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 1,
+      "rent": "2200.00",
+      "image": "image/upload/v1636581689/9cdfd2d27aa17e1b04e7310ed57d172b.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 14,
+    "fields": {
+      "name": "1523 Broad Ave.",
+      "latitude": 38.025793,
+      "longitude": -78.505242,
+      "address1": "1523 Broad Ave.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 1,
+      "rent": "431.00",
+      "image": "image/upload/v1636581682/1b1030d8712930274e791bb6efa8bffa.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 15,
+    "fields": {
+      "name": "Arlington Court Apartments - 1 Bedrooms Available 2022-2023",
+      "latitude": 38.050213,
+      "longitude": -78.508151,
+      "address1": "2420 Arlington Boulevard Apt. #A6",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "900.00",
+      "image": "image/upload/v1636589513/216f2ad6f7bdfa1ffcdf531f7c69be35.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 16,
+    "fields": {
+      "name": "Lewis Mountain Road Duplex",
+      "latitude": 38.0385459,
+      "longitude": -78.515033,
+      "address1": "2013-15 Lewis Mountain Rd",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1650.00",
+      "image": "image/upload/v1636581683/48724f9d8c895a85cbd9ce0c9e5e1025.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 17,
+    "fields": {
+      "name": "4 Bedroom House Close to JPA - Parking Lot!",
+      "latitude": 38.026413,
+      "longitude": -78.50904,
+      "address1": "220 Shamrock Road Apt #A",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2450.00",
+      "image": "image/upload/v1636589514/818eb194c77eccfefbc6720b390c98a2.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 18,
+    "fields": {
+      "name": "Maupin Townhomes",
+      "latitude": 38.043240314608,
+      "longitude": -78.49392295159,
+      "address1": "1237 Preston Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2800.00",
+      "image": "image/upload/v1636760933/b47776461fa77a9d30cb38171aab2f43.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 19,
+    "fields": {
+      "name": "4 Bedroom on the Corner | Parking | Close to UVA and the Corner!",
+      "latitude": 38.038567,
+      "longitude": -78.499003,
+      "address1": "1513 Virginia Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "3150.00",
+      "image": "image/upload/v1636581677/e188acfa281050cd7014ef6d2700830d.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 20,
+    "fields": {
+      "name": "220 Shamrock Road",
+      "latitude": 38.0262176,
+      "longitude": -78.5089606,
+      "address1": "220 Shamrock Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2450.00",
+      "image": "image/upload/v1636760934/a2035f1c1cf28f20835a0d4568f7d26b.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 21,
+    "fields": {
+      "name": "Lark on Main",
+      "latitude": 38.0323157,
+      "longitude": -78.4952222,
+      "address1": "1000 West Main Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "679.00",
+      "image": "image/upload/v1636581684/5919c990a2a7a64c8d6637f8cc84a38f.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 22,
+    "fields": {
+      "name": "103 Valley Road",
+      "latitude": 38.0305065,
+      "longitude": -78.5078882,
+      "address1": "103 Valley Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1460.00",
+      "image": "image/upload/v1636581685/64cb9844ca9b6cf6715e02d622fc894a.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 23,
+    "fields": {
+      "name": "The Fred 4BR Apartments on the Corner!",
+      "latitude": 38.0344612,
+      "longitude": -78.4971098,
+      "address1": "1211 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "3350.00",
+      "image": "image/upload/v1636581685/245d092f4849831a743138e42fab5a10.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 24,
+    "fields": {
+      "name": "Wellington Court",
+      "latitude": 38.0360947,
+      "longitude": -78.4961761,
+      "address1": "1122 John Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1625.00",
+      "image": "image/upload/v1636581686/ab8ecce3016fbf7f9a634dc8d2a15c56.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 25,
+    "fields": {
+      "name": "One Bedroom Apartments Available Near UVA Law and Darden!",
+      "latitude": 38.0507025,
+      "longitude": -78.508033,
+      "address1": "2430 Arlington Boulevard",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "900.00",
+      "image": "image/upload/v1636581694/22267137d3f9defee3b6b17847b148ba.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 26,
+    "fields": {
+      "name": "1721 Jefferson Park Avenue",
+      "latitude": 38.02978,
+      "longitude": -78.509342,
+      "address1": "1721 Jefferson Park Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "862.00",
+      "image": "image/upload/v1636581687/8f15f74e24f4a76be18df3b62eee7125.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 27,
+    "fields": {
+      "name": "One Hundred Avon",
+      "latitude": 38.027888,
+      "longitude": -78.4752833,
+      "address1": "100 Avon Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22902,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1625.00",
+      "image": "image/upload/v1636581700/0ca99fbe51adc9e3a1a9c20abec6f1c5.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 28,
+    "fields": {
+      "name": "630 Cabell Ave.",
+      "latitude": 38.041921,
+      "longitude": -78.496789,
+      "address1": "630 Cabell Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "1000.00",
+      "image": "image/upload/v1636581690/3a12074aee3215ecfb67006010a98f8e.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 29,
+    "fields": {
+      "name": "Rugby Apartments 2 Bedroom 1 Bathroom",
+      "latitude": 38.0419033,
+      "longitude": -78.5008767,
+      "address1": "4 University Circle",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "2250.00",
+      "image": "image/upload/v1636581683/0651cdd5658d42d19107ab24a677910c.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 30,
+    "fields": {
+      "name": "417 14th Street NW",
+      "latitude": 38.0382829,
+      "longitude": -78.4976806,
+      "address1": "417 14th Street Northwest",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "750.00",
+      "image": "image/upload/v1636581691/016ef20fc7ee261c1ff6f20b96f3f549.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 31,
+    "fields": {
+      "name": "Preston Square Apartments",
+      "latitude": 38.0425612,
+      "longitude": -78.4927994,
+      "address1": "1111 Preston Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "975.00",
+      "image": "image/upload/v1636581680/60855a03c99340b3bcb03d45d8514af0.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 32,
+    "fields": {
+      "name": "2022-2023 School Year Available 060522 1305 John St 9 bedrooms / 5 bathrooms",
+      "latitude": 38.0370477,
+      "longitude": -78.4969158,
+      "address1": "1305 John Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 9,
+      "num_bathrooms": 5,
+      "rent": "7145.00",
+      "image": "image/upload/v1636581692/a0e8db20d5abe72df2ec2372a1796e2a.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 33,
+    "fields": {
+      "name": "1821 Jefferson Park Avenue",
+      "latitude": 38.028044,
+      "longitude": -78.5114,
+      "address1": "1821 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1000.00",
+      "image": "image/upload/v1636581704/eb230e7630840804fdca1b45e33c8149.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 34,
+    "fields": {
+      "name": "Rooms (Possible entire 3  BDR House) in Townhouse",
+      "latitude": 38.0810966,
+      "longitude": -78.491344,
+      "address1": " Townwood Ct.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "290.00",
+      "image": "image/upload/v1636581693/3a32bf9444c3762ad3cda289df3299b5.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 35,
+    "fields": {
+      "name": "330 15th Street - Studio Apartments - Now Leasing 2022-2023",
+      "latitude": 38.0370373,
+      "longitude": -78.4987016,
+      "address1": "330 15th Street Northwest",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "795.00",
+      "image": "image/upload/v1636581687/693155fbf281783225e04168a139ae58.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 36,
+    "fields": {
+      "name": "CHARMING 3-BEDROOM, ONE STORY, FULLY-FURNISHED BRICK HOME IN WALKING DISTANCE OF GROUNDS",
+      "latitude": 38.0399211,
+      "longitude": -78.5155223,
+      "address1": "310 Kent Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 2,
+      "rent": "2500.00",
+      "image": "image/upload/v1636581694/622c4b41f76287556a0b7973fdf26060.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 37,
+    "fields": {
+      "name": "Wertland Square",
+      "latitude": 38.035129,
+      "longitude": -78.498284,
+      "address1": "216-218 14th Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "2085.00",
+      "image": "image/upload/v1636581692/82ea0458d2f5375fbcb49906173150ee.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 38,
+    "fields": {
+      "name": "2022-2023 School Year Available June 5 2022 / 463 14th St 8 bdrm / 5 bath",
+      "latitude": 38.0387783,
+      "longitude": -78.4973255,
+      "address1": "463 14th Street Northwest",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 8,
+      "num_bathrooms": 5,
+      "rent": "7535.00",
+      "image": "image/upload/v1636581695/4c6164b26537934fe9cf8e8913837fb0.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 39,
+    "fields": {
+      "name": "Oxford Hill 2BR 1BTH",
+      "latitude": 38.041791,
+      "longitude": -78.4922011,
+      "address1": "1027 Madison Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1355.00",
+      "image": "image/upload/v1636581695/bad76fdb2ab6f444696e7015d6ece877.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 40,
+    "fields": {
+      "name": "Very Spacious, Newly Remodeled Home, Convenient to Grounds and UVA Hospital",
+      "latitude": 38.025702,
+      "longitude": -78.5168432,
+      "address1": "2302 Fontaine Avenue House B",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 5,
+      "num_bathrooms": 2,
+      "rent": "3200.00",
+      "image": "image/upload/v1636581696/57eface19b73c76d0e62b26dd05ab572.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 41,
+    "fields": {
+      "name": "1250 Wertland Street Unit C",
+      "latitude": 38.034056,
+      "longitude": -78.497371,
+      "address1": "1250 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "829.00",
+      "image": "image/upload/v1636581831/ba33aaa8d8788f2afa7eb7dd8d5aa07b.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 42,
+    "fields": {
+      "name": "ALL UTILITIES included 10 bedroom / 5 bathroom 1100 Preston Ave August 5th 2022",
+      "latitude": 38.041957,
+      "longitude": -78.491992,
+      "address1": "1100 Preston Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 10,
+      "num_bathrooms": 5,
+      "rent": "8250.00",
+      "image": "image/upload/v1636581697/cb190c919ec8722f22d6f43462dd1f49.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 43,
+    "fields": {
+      "name": "Cambridge House Apartments",
+      "latitude": 38.0369258,
+      "longitude": -78.4878269,
+      "address1": "839 Preston Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1250.00",
+      "image": "image/upload/v1636760935/e6c7a505f5803dee53d1c912a68e159f.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 44,
+    "fields": {
+      "name": "114 Cleveland Ave / Heart of Frysprings 3 bdrm 2 bath Available 080122",
+      "latitude": 38.0202829,
+      "longitude": -78.5133492,
+      "address1": "114 Cleveland Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 2,
+      "rent": "2100.00",
+      "image": "image/upload/v1636581698/d00e47e14e972b7239567dcc41f9f937.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 45,
+    "fields": {
+      "name": "106-A Maywood Lane",
+      "latitude": 38.0289722,
+      "longitude": -78.5087427,
+      "address1": "106 Maywood Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1200.00",
+      "image": "image/upload/v1636581690/4ec5924ffccea577e687ad48ecc823fb.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 46,
+    "fields": {
+      "name": "Fully-furnished quaint country home with large yard available for short term or long term!",
+      "latitude": 38.0981621,
+      "longitude": -78.4322839,
+      "address1": "2268 Stargate Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22911,
+      "num_rooms": 3,
+      "num_bathrooms": 1,
+      "rent": "1599.00",
+      "image": "image/upload/v1636581699/d613b67f3abb3fd5afdf45c6f25d5470.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 47,
+    "fields": {
+      "name": "Rugby Apartments - 2BR w/Large DEN! Perfect for a group of 3",
+      "latitude": 38.041917,
+      "longitude": -78.500832,
+      "address1": "4 University Circle",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "2999.00",
+      "image": "image/upload/v1636581691/252f82f2ad30cd98a8c40649a27edb14.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 48,
+    "fields": {
+      "name": "Glimmer  View/ studio apartment/ private quiet location/ beautiful views of the Blue Ridge mountains",
+      "latitude": 38.0697351,
+      "longitude": -78.4361593,
+      "address1": "660 Explorers Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22911,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "1225.00",
+      "image": "image/upload/v1636581705/d44a0220c88a7c413ff6577ea476d7d9.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 49,
+    "fields": {
+      "name": "Ash Tree Apartments",
+      "latitude": 38.0412402,
+      "longitude": -78.4964645,
+      "address1": "611- 621 Madison Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1420.00",
+      "image": "image/upload/v1636581699/53bf6e5a0b4df449e411261d11e29630.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 50,
+    "fields": {
+      "name": "1 bedroom, private office, and private bath",
+      "latitude": 38.0376225,
+      "longitude": -78.509177,
+      "address1": "1916 Lewis Mountain Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "600.00",
+      "image": "image/upload/v1636581701/44b243bb903e972dbd4102b16ac6dcbf.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 51,
+    "fields": {
+      "name": "1701 Gordon Avenue",
+      "latitude": 38.040397,
+      "longitude": -78.4999101,
+      "address1": "1701 Gordon Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1075.00",
+      "image": "image/upload/v1636581696/1630c9580b62c9bcc2163b4dff89bb9e.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 52,
+    "fields": {
+      "name": "LARGE SUNNY BASEMENT APARTMENT CLOSE TO CAMPUS",
+      "latitude": 38.079768,
+      "longitude": -78.4565225,
+      "address1": "2623 Huntington Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1200.00",
+      "image": "image/upload/v1636581705/c7640030ea7ffb0f8eb0225b4e0a1d88.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 53,
+    "fields": {
+      "name": "1409 Grady Ave | Various Apartments Available",
+      "latitude": 38.04071,
+      "longitude": -78.496886,
+      "address1": "1409 Grady Avenue Apt #2",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "995.00",
+      "image": "image/upload/v1636581709/49a9badea3af7586dfbd565abcd74350.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 54,
+    "fields": {
+      "name": "Available 6/1/2022 or 7/1/2022 House (4 person)",
+      "latitude": 38.02917,
+      "longitude": -78.5125769,
+      "address1": "126 Shamrock Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22902,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2750.00",
+      "image": "image/upload/v1636581712/41c3fe397e6af00a38b6eb153bdf4845.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 55,
+    "fields": {
+      "name": "Jefferson Commons",
+      "latitude": 38.030834,
+      "longitude": -78.50789,
+      "address1": "1620 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "3405.00",
+      "image": "image/upload/v1636581703/e520214563d59fd685d8dfff293dd6b5.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 56,
+    "fields": {
+      "name": "804 Tunlaw Place, close to corner",
+      "latitude": 38.0431583,
+      "longitude": -78.496733,
+      "address1": "806 Tunlaw Pl.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 5,
+      "rent": "2500.00",
+      "image": "image/upload/v1636581704/480c1c224da572f29348e0ebbce51d35.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 57,
+    "fields": {
+      "name": "1883 University Circle Apt #D - 1 Bedroom Steps to UVA!",
+      "latitude": 38.0416814,
+      "longitude": -78.5018985,
+      "address1": "1883 University Circle Apt #D",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "825.00",
+      "image": "image/upload/v1636581693/582d4f023d60ef17343e6ff57fa6271b.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 58,
+    "fields": {
+      "name": "Updated historic home in Belmont close to public transportation (free to UVA) and the downtown",
+      "latitude": 38.0251944,
+      "longitude": -78.4782691,
+      "address1": "520 Avon Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22902,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "5000.00",
+      "image": "image/upload/v1636581709/ef45e041826b55baea1db7921e3a5a0b.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 59,
+    "fields": {
+      "name": "Oxford Hill",
+      "latitude": 38.041089,
+      "longitude": -78.494006,
+      "address1": "704 Madison Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 1,
+      "rent": "1685.00",
+      "image": "image/upload/v1636581710/d25186cf86215cc1db43d44f9dcabdff.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 60,
+    "fields": {
+      "name": "Fully furnished bedroom w/bath in Private Home",
+      "latitude": 38.08307,
+      "longitude": -78.483806,
+      "address1": "1532 Lake Forest Drive",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "750.00",
+      "image": "image/upload/v1636581702/b68704671d95c80c3ecfc4e588d1d269.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 61,
+    "fields": {
+      "name": "NOW LEASING - 2022-2023 - Call To Schedule Your Tour!",
+      "latitude": 38.0378463,
+      "longitude": -78.4975928,
+      "address1": "402 14th Street ",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "1895.00",
+      "image": "image/upload/v1636581708/e9d18afded8fec82de561c7fdc70bdb1.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 62,
+    "fields": {
+      "name": "Available 1-1-2023 - House next to Scott Stadium and many UVA Schools",
+      "latitude": 38.02934,
+      "longitude": -78.51266,
+      "address1": "House at 128 Shamrock Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1650.00",
+      "image": "image/upload/v1636581710/cb8bd1cee52519f56fe12056025fbe3c.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 63,
+    "fields": {
+      "name": "The Pavilion at North Grounds",
+      "latitude": 38.0491205,
+      "longitude": -78.5064196,
+      "address1": "2101 Arlington Blvd.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "882.00",
+      "image": "image/upload/v1636581711/0d1d06d3bfc0987e493db9b4052fa3e7.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 64,
+    "fields": {
+      "name": "Room in large house adjacent to South Lawn",
+      "latitude": 38.030662,
+      "longitude": -78.505621,
+      "address1": "505 Valley Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "850.00",
+      "image": "image/upload/v1636581703/75cd4c372bd0e6ecc94ce000a4d46a83.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 65,
+    "fields": {
+      "name": "Mosby  Apartments located on 15th Street near UVA's Central Grounds.",
+      "latitude": 38.039936,
+      "longitude": -78.497216,
+      "address1": "510-512 15th Street Northwest",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1010.00",
+      "image": "image/upload/v1636581712/ebf53e79a3cfa120b78d849af551e6a8.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 66,
+    "fields": {
+      "name": "The Corner Village",
+      "latitude": 38.034643,
+      "longitude": -78.497481,
+      "address1": "1215 Wertland St., Apt. A13",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1225.00",
+      "image": "image/upload/v1636581713/b3ccfc52444221fed8f5df5b1451bf53.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 67,
+    "fields": {
+      "name": "Free Room and Board for Graduate Student in Trade for Babysitting. West of Campus",
+      "latitude": 38.0536366,
+      "longitude": -78.545633,
+      "address1": "485 Oak Circle",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1.00",
+      "image": "image/upload/v1636581838/7f5eb326220ddfa54f1c1ea7e521d7b1.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 68,
+    "fields": {
+      "name": "Cherry Hill nr UVA Hospital/Campus and Wegmans/Fifth St Station-Easy I-64 access.",
+      "latitude": 38.0254896,
+      "longitude": -78.5014622,
+      "address1": " Bing Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 3,
+      "rent": "2499.00",
+      "image": "image/upload/v1636581717/7d5660e588a2d32329d6566b500f9dfe.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 69,
+    "fields": {
+      "name": "1203 Wertland St.",
+      "latitude": 38.0347966,
+      "longitude": -78.4963459,
+      "address1": "1203 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "1125.00",
+      "image": "image/upload/v1636581716/fd97efdcf23dd5c45d7656c5697cf880.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 70,
+    "fields": {
+      "name": "Flats at The West Village",
+      "latitude": 38.031966,
+      "longitude": -78.4928955,
+      "address1": "852 West Main Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "989.00",
+      "image": "image/upload/v1636581722/bd9c800460471541ef9b9b30877cb938.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 71,
+    "fields": {
+      "name": "1115 Wertland St.",
+      "latitude": 38.0341792,
+      "longitude": -78.4951805,
+      "address1": "1115 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "925.00",
+      "image": "image/upload/v1636581716/463f55da20c52b29567725e91bdbd758.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 72,
+    "fields": {
+      "name": "The Standard",
+      "latitude": 38.032445,
+      "longitude": -78.49321,
+      "address1": "853 West Main Street #540B",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1092.00",
+      "image": "image/upload/v1636581706/835f70232921769d172e501a249d4668.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 73,
+    "fields": {
+      "name": "Jefferson Ridge Apartment Homes",
+      "latitude": 38.0151054,
+      "longitude": -78.524332,
+      "address1": "810 Catalpa Ct",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1299.00",
+      "image": "image/upload/v1636581715/c2cf3bb75c80f532aa08b176a5b7530f.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 74,
+    "fields": {
+      "name": "Walk to Grounds and Hospital!  Available August 2022",
+      "latitude": 38.025001,
+      "longitude": -78.504419,
+      "address1": "1509 Broad Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1295.00",
+      "image": "image/upload/v1636581722/c1765d8b0df5c3508661d430ea930866.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 75,
+    "fields": {
+      "name": "Shamrock Gardens",
+      "latitude": 38.027371162647,
+      "longitude": -78.511210879099,
+      "address1": "1904 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "830.00",
+      "image": "image/upload/v1636581724/cda2131d4150fa470f29b80f8be4ea09.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 76,
+    "fields": {
+      "name": "Centrally Located Midtown Apartment",
+      "latitude": 38.027384,
+      "longitude": -78.487487,
+      "address1": "306 Oak Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "975.00",
+      "image": "image/upload/v1636581715/bd5193b73551a2e67209fb3bd0499c0b.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 77,
+    "fields": {
+      "name": "1107 Wertland St.",
+      "latitude": 38.0344631,
+      "longitude": -78.4956974,
+      "address1": "1107 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1475.00",
+      "image": "image/upload/v1636581836/0b44b898237b3513c8c7e2bbe2c8f96f.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 78,
+    "fields": {
+      "name": "JPA",
+      "latitude": 38.0260227,
+      "longitude": -78.5135833,
+      "address1": "2100 Jefferson Park Ave Apt 2",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 2,
+      "rent": "1300.00",
+      "image": "image/upload/v1636581723/dcb597ec63a5ea45a4300520c3db63c9.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 79,
+    "fields": {
+      "name": "1203 Wertland St.",
+      "latitude": 38.0347966,
+      "longitude": -78.4963459,
+      "address1": "1203 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "1125.00",
+      "image": "image/upload/v1636581716/fd97efdcf23dd5c45d7656c5697cf880.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 80,
+    "fields": {
+      "name": "Centrally Located Midtown Apartment",
+      "latitude": 38.027384,
+      "longitude": -78.487487,
+      "address1": "306 Oak Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "975.00",
+      "image": "image/upload/v1636581715/bd5193b73551a2e67209fb3bd0499c0b.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 81,
+    "fields": {
+      "name": "1115 Wertland St.",
+      "latitude": 38.0341792,
+      "longitude": -78.4951805,
+      "address1": "1115 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "925.00",
+      "image": "image/upload/v1636581716/463f55da20c52b29567725e91bdbd758.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 82,
+    "fields": {
+      "name": "Master Bedroom Suite in Private Home",
+      "latitude": 38.08307,
+      "longitude": -78.483806,
+      "address1": "1532 Lake Forest Drive",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "850.00",
+      "image": "image/upload/v1636581714/35709a13ef3c363685241651dc575321.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 83,
+    "fields": {
+      "name": "College Court",
+      "latitude": 38.0361208,
+      "longitude": -78.4969004,
+      "address1": "312 13th St. NW",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "675.00",
+      "image": "image/upload/v1636581726/8d600359e02b822c088f8dea81672006.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 84,
+    "fields": {
+      "name": "Walk to Grounds and Hospital!! Available July 2022",
+      "latitude": 38.025087,
+      "longitude": -78.503814,
+      "address1": "505 Valley Road Extension",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "1295.00",
+      "image": "image/upload/v1636581717/b947fd1e1cd6d611dca85de3479e2073.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 85,
+    "fields": {
+      "name": "Shamrock Gardens",
+      "latitude": 38.027371162647,
+      "longitude": -78.511210879099,
+      "address1": "1904 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "830.00",
+      "image": "image/upload/v1636581724/cda2131d4150fa470f29b80f8be4ea09.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 86,
+    "fields": {
+      "name": "Available now, one bedroom in a two bed/one bath apartment, reserved parking",
+      "latitude": 38.0361072,
+      "longitude": -78.4968624,
+      "address1": "312 13th Street Northwest",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "877.00",
+      "image": "image/upload/v1636581725/6e8ba9568a9a7d9afd2827e8274536a9.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 87,
+    "fields": {
+      "name": "All Inclusive Rooms for Rent for Grad Students",
+      "latitude": 38.039926,
+      "longitude": -78.509452,
+      "address1": "120 Rothery Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 2,
+      "rent": "650.00",
+      "image": "image/upload/v1636581716/e2856daf548c413eed4881e23ccb37f6.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 88,
+    "fields": {
+      "name": "Landmark Apartments",
+      "latitude": 38.0269655,
+      "longitude": -78.5114791,
+      "address1": "1904 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "830.00",
+      "image": "image/upload/v1636581726/87495fec71315ece2fdb778562fbeba6.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 89,
+    "fields": {
+      "name": "Find Roommates & Live Cheaply (House Near UVA)",
+      "latitude": 38.0256864,
+      "longitude": -78.5226249,
+      "address1": "105 Westerly Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2100.00",
+      "image": "image/upload/v1636581728/cf421e3e57a53bf70daf09f8abb2c2ad.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 90,
+    "fields": {
+      "name": "University Quad",
+      "latitude": 38.0342466,
+      "longitude": -78.4981245,
+      "address1": "1300 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "910.00",
+      "image": "image/upload/v1636581729/79cbfbb4e81dd61eb7bf0f71927066fc.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 91,
+    "fields": {
+      "name": "Available 7/1/2022 - Loft Studio/Apartment  Next to Scott Stadium and many UVA Schools.",
+      "latitude": 38.02934,
+      "longitude": -78.51266,
+      "address1": "128.5 Shamrock Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "975.00",
+      "image": "image/upload/v1636581728/d77f0bd38093596f4054a2261952ddb2.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 92,
+    "fields": {
+      "name": "1121 Wertland St.",
+      "latitude": 38.0345139,
+      "longitude": -78.4961818,
+      "address1": "1121 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "997.00",
+      "image": "image/upload/v1636581728/f1b92b12369a4c7609e378d1040006fa.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 93,
+    "fields": {
+      "name": "Free Room and Board for Graduate Student in Trade for Babysitting. West of Campus",
+      "latitude": 38.0536366,
+      "longitude": -78.545633,
+      "address1": "485 Oak Circle",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1.00",
+      "image": "image/upload/v1636581838/7f5eb326220ddfa54f1c1ea7e521d7b1.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 94,
+    "fields": {
+      "name": "Camden Place",
+      "latitude": 38.0357178,
+      "longitude": -78.4987149,
+      "address1": " 230 14th St. NW",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "800.00",
+      "image": "image/upload/v1636581732/e9f96b205c08d375e76ac14922d1359e.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 95,
+    "fields": {
+      "name": "Cherry Hill nr UVA Hospital/Campus and Wegmans/Fifth St Station-Easy I-64 access.",
+      "latitude": 38.0254896,
+      "longitude": -78.5014622,
+      "address1": " Bing Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 3,
+      "rent": "2499.00",
+      "image": "image/upload/v1636581717/7d5660e588a2d32329d6566b500f9dfe.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 96,
+    "fields": {
+      "name": "John St. Place",
+      "latitude": 38.0368876,
+      "longitude": -78.4971021,
+      "address1": "1308 John St.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 3,
+      "rent": "1042.00",
+      "image": "image/upload/v1636581730/a82971fbf8b0ecdbc7a112f716fc41a1.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 97,
+    "fields": {
+      "name": "Fully-furnished private room for rent in country home near Foxfields",
+      "latitude": 38.112662407639,
+      "longitude": -78.526096588916,
+      "address1": "858 Woodlands Road",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "500.00",
+      "image": "image/upload/v1636581718/babd5fa533f8ef3c0c42db991e6a5dc6.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 98,
+    "fields": {
+      "name": "Granite Park Apartments",
+      "latitude": 38.072805,
+      "longitude": -78.492931,
+      "address1": "2407 Peyton Drive",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1010.00",
+      "image": "image/upload/v1636581733/9c65c442422808a0d0a783144e22a8ad.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 99,
+    "fields": {
+      "name": "2 Bdrm Apt close to UVA and Downtown Mall",
+      "latitude": 38.03137,
+      "longitude": -78.4893971,
+      "address1": "625 West Main St.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "850.00",
+      "image": "image/upload/v1636581730/5d268422bdac4e21eca360efc195d673.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 100,
+    "fields": {
+      "name": "Wertland Trio",
+      "latitude": 38.0340587,
+      "longitude": -78.4959573,
+      "address1": "1110 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "812.00",
+      "image": "image/upload/v1636581731/dcb8324627683653bc7118654ff415fe.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 101,
+    "fields": {
+      "name": "JPA",
+      "latitude": 38.0260227,
+      "longitude": -78.5135833,
+      "address1": "2100 Jefferson Park Ave Apt 2",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 2,
+      "rent": "1300.00",
+      "image": "image/upload/v1636581723/dcb597ec63a5ea45a4300520c3db63c9.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 102,
+    "fields": {
+      "name": "Camden Plaza",
+      "latitude": 38.035679,
+      "longitude": -78.498709,
+      "address1": "224 14th St. N.W.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "1275.00",
+      "image": "image/upload/v1636581734/032afaaa330eeb45a294e8612240c54f.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 103,
+    "fields": {
+      "name": "123 N. Piedmont Ave",
+      "latitude": 38.027308,
+      "longitude": -78.519073,
+      "address1": "123 N. Piedmont",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 8,
+      "num_bathrooms": 8,
+      "rent": "3960.00",
+      "image": "image/upload/v1636581731/1a97ee5d6226ec8ede593cff0049eea4.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 104,
+    "fields": {
+      "name": "Cavalier Court Apartments",
+      "latitude": 38.028089518074,
+      "longitude": -78.516060312997,
+      "address1": "1904 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "815.00",
+      "image": "image/upload/v1636581724/673145404eb1ba52f10338dbf0d26585.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 105,
+    "fields": {
+      "name": "Oxbridge Courtyard",
+      "latitude": 38.036629,
+      "longitude": -78.497416,
+      "address1": " 314 14th St. NW",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1450.00",
+      "image": "image/upload/v1636581718/d7980f1f7d24cd6b34553e5c5f619625.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 106,
+    "fields": {
+      "name": "Graduate Court",
+      "latitude": 38.0364146,
+      "longitude": -78.4983295,
+      "address1": "304  14th St. N.W.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 4,
+      "rent": "900.00",
+      "image": "image/upload/v1636581719/dbaf4629e508a3571e69c06567dc9d57.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 107,
+    "fields": {
+      "name": "1029 Wertland St.",
+      "latitude": 38.0349594,
+      "longitude": -78.4951866,
+      "address1": "1029 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 2,
+      "rent": "900.00",
+      "image": "image/upload/v1636581734/4de59a9354f88f7cfaf915f2306a0bc4.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 108,
+    "fields": {
+      "name": "Grady Apartments",
+      "latitude": 38.040197,
+      "longitude": -78.49706,
+      "address1": "1410 Grady Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "675.00",
+      "image": "image/upload/v1636581840/e49474c845083c8f59e2d9a66ebbc0cb.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 109,
+    "fields": {
+      "name": "Towne Court",
+      "latitude": 38.0289614,
+      "longitude": -78.4931896,
+      "address1": "762 King St.",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "799.00",
+      "image": "image/upload/v1636581841/0788c08979626556382a1d74e87e6b22.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 110,
+    "fields": {
+      "name": "Wertland Trio",
+      "latitude": 38.0341438,
+      "longitude": -78.4961998,
+      "address1": "1120 Wertland Street",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "999.00",
+      "image": "image/upload/v1636581725/653b2a34543a36cb15272e4507944433.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 111,
+    "fields": {
+      "name": "Lambeth Lofts",
+      "latitude": 38.0409986,
+      "longitude": -78.5016313,
+      "address1": "1801 Lambeth Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 2,
+      "num_bathrooms": 1,
+      "rent": "925.00",
+      "image": "image/upload/v1636581735/5ce463d22da7c3698d7a2ae1092efc62.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 112,
+    "fields": {
+      "name": "5 Bedroom for 2022-2023 Year JPA Neighborhood 109 Observatory B",
+      "latitude": 38.0269001,
+      "longitude": -78.5142368,
+      "address1": "109 Observatory Avenue B",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 5,
+      "num_bathrooms": 2,
+      "rent": "3825.00",
+      "image": "image/upload/v1636581736/a6eb16c6099e4d5c8301d0bdbb42c155.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 113,
+    "fields": {
+      "name": "2022-2023 School Year Available May 26 2022 109 Kent Terr C 3 BDRM / 1 Bath",
+      "latitude": 38.0278731,
+      "longitude": -78.5096209,
+      "address1": "109 Kent Terrace C",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 1,
+      "rent": "1940.00",
+      "image": "image/upload/v1636581736/506cdaefd5e6cfa0b53cef59f4da184d.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 114,
+    "fields": {
+      "name": "2022-2023 School Year Available July 1st 2022 109 Kent Terr D 3 BDRM / 1 Bath",
+      "latitude": 38.0278731,
+      "longitude": -78.5096209,
+      "address1": "109 Kent Terrace D",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 1,
+      "rent": "1977.00",
+      "image": "image/upload/v1636581735/b71aa8238af67002f65fbbe2eb9da12a.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 115,
+    "fields": {
+      "name": "The Crossroads",
+      "latitude": 38.026489,
+      "longitude": -78.5145749,
+      "address1": "2111 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2600.00",
+      "image": "image/upload/v1636581737/cc5f9565d17d2c70a771a07bd93443b2.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 116,
+    "fields": {
+      "name": "University Heights",
+      "latitude": 38.043452,
+      "longitude": -78.5163929,
+      "address1": "250 Colonnade Drive",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "936.00",
+      "image": "image/upload/v1636581737/6696fe6ae5f84640ac43e11118b16e95.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 117,
+    "fields": {
+      "name": "2022-2023 School Year Available June 5 2022 109 Kent Terr B 3 BDRM / 1 Bath",
+      "latitude": 38.0278731,
+      "longitude": -78.5096209,
+      "address1": "109 Kent Terrace Apt B",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 3,
+      "num_bathrooms": 1,
+      "rent": "1977.00",
+      "image": "image/upload/v1636581737/c3266c444253c9f33904f722448d0cab.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 118,
+    "fields": {
+      "name": "Arden Place",
+      "latitude": 38.077789,
+      "longitude": -78.470074,
+      "address1": "1810 Arden Creek Lane",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 0,
+      "num_bathrooms": 1,
+      "rent": "1493.00",
+      "image": "image/upload/v1636581738/18579fee5c8a062b9a37eb878af8125e.png"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 119,
+    "fields": {
+      "name": "The Crossroads",
+      "latitude": 38.026489,
+      "longitude": -78.5145749,
+      "address1": "2111 Jefferson Park Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2900.00",
+      "image": "image/upload/v1636581739/859d513d7d0b24a0f5f0d5460a537011.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 120,
+    "fields": {
+      "name": "The Pavilions",
+      "latitude": 38.0260462,
+      "longitude": -78.5149117,
+      "address1": "2112 Jefferson Park Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "2890.00",
+      "image": "image/upload/v1636581739/61218cc6b36c8df096eed368a626c294.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 121,
+    "fields": {
+      "name": "The Pavilions",
+      "latitude": 38.0260462,
+      "longitude": -78.5149117,
+      "address1": "2112 Jefferson Park Ave",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 2,
+      "rent": "3099.00",
+      "image": "image/upload/v1636581739/f695d4055b6307b22e4e98f0930e5094.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 122,
+    "fields": {
+      "name": "1900 #10 JPA",
+      "latitude": 38.027154,
+      "longitude": -78.511039,
+      "address1": "1900 Jefferson Park Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22903,
+      "num_rooms": 4,
+      "num_bathrooms": 4,
+      "rent": "625.00",
+      "image": "image/upload/v1636581740/4a73aad663179537e76f6897eb9795fb.jpg"
+    }
+  },
+  {
+    "model": "core.listing",
+    "pk": 123,
+    "fields": {
+      "name": "Stonefield Commons Midrise Luxury Apartments-Waitlist Now for Summer and Fall",
+      "latitude": 38.0676025,
+      "longitude": -78.4916481,
+      "address1": "District Avenue",
+      "address2": "",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zipcode": 22901,
+      "num_rooms": 1,
+      "num_bathrooms": 1,
+      "rent": "1300.00",
+      "image": "image/upload/v1636581740/37b4991d5d2c1c195e75b824f3f4da6d.jpg"
+    }
+  }
+]

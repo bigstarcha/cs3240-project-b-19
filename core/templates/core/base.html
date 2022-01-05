@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load socialaccount %}
+
+{% comment %}
+Complete list of all citations including authors, versions, dates, and urls: https://github.com/uva-cs3240-f21/project-b-19/blob/main/citations.md
+In this file:
+- Google Login Tutorial (https://www.section.io/engineering-education/django-google-oauth/)
+{% endcomment %}
+
+<head>
+  <title>
+    {% block title %}UVA Apartments & Homes{% endblock %}
+  </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/starability@2.4.0/starability-css/starability-all.min.css">
+
+  <!-- Global styles -->
+  <style>
+    /*
+      Hiding browser default increment/decrement buttons for number input fields
+      https://stackoverflow.com/a/22306944/3827531
+    */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+
+  </style>
+
+  {% block head %}{% endblock %}
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header class="d-flex justify-content-between bg-dark text-white align-items-center p-1 p-sm-3">
+    <nav class="navbar navbar-expand-lg flex-grow-1 navbar-dark bg-dark">
+      <div class="container-fluid justify-content-start ">
+
+        <button class="navbar-toggler me-3 me-4-md" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <h1 class="fs-2"> <a href="{% url 'core:index' %}" class="link-light text-decoration-none">UVA Apartments & Homes</a> </h1>
+
+        <div class="collapse navbar-collapse ms-sm-4" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+
+            <li class="nav-item"><a class="nav-link" href="{% url 'core:submit-listing' %}">Submit a listing</a></li>
+
+            <li class="nav-item dropdown">
+              <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tutorial
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{% url 'core:tutorial-submit-listings' %}">How to Submit a Listing</a></li>
+                <li><a class="dropdown-item" href="{% url 'core:tutorial-submit-reviews' %}">How to Submit a Review</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+          <form class="d-flex" onsubmit="search()" id="search-form">
+            <input id="search-box" class="form-control me-2" type="search" placeholder="Search" value="{{request.GET.search}}" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <div class="d-flex align-items-center ms-sm-auto mt-3 mt-sm-0">
+            {% if user.is_authenticated %}
+            Hi {{user.first_name}}
+            <a href="{% url 'logout' %}?next={{ request.path|urlencode }}" role="button" class="m-2 btn btn-primary">Sign Out</a>
+            {% else %}
+            <a href="{% provider_login_url 'google' next=request.path|urlencode %}" role="button" class="btn btn-lg btn-primary">Sign In</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="flex-grow-1 container">
+    {% block content %}{% endblock %}
+  </main>
+  <!-- https://mdbootstrap.com/docs/b4/jquery/navigation/footer/ -->
+  <footer class="bd-footer mt-5 bg-light">
+    <h5>
+      <p class="text-center">Contributors to this site:</p>
+    </h5>
+    <div class="container py-1 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-md-auto">
+          <a href="https://github.com/EthanGahm" class="link-primary">Ethan Gahm</a>
+        </div>
+        <div class="col-md-auto">
+          <a href="https://github.com/chrissantamaria" class="link-primary">Chris Santamaria</a>
+        </div>
+        <div class="col-md-auto">
+          <a href="https://github.com/nikhil-R-A" class="link-primary">Nikhil Aluru</a>
+        </div>
+        <div class="col-md-auto">
+          <a href="https://github.com/bigstarcha" class="link-primary">Tim Cha</a>
+        </div>
+        <div class="col-md-auto">
+          <a href="https://github.com/jtgoode02" class="link-primary">Jordan Goode</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3"> 2021 UVA:
+      <a href="https://cs3240.cs.virginia.edu/"> CS 3240</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+  <script>
+    document.getElementById("search-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const searchString = document.getElementById("search-box").value;
+      searchString === "" ?
+        location.href = '/' :
+        location.href = `/?search=${searchString}`;
+    });
+
+  </script>
+</body>
+
+</html>

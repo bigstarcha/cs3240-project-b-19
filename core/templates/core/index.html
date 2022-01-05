@@ -1,0 +1,129 @@
+{% extends "core/base.html" %}
+{% load cloudinary %}
+{% load stars %}
+
+{% comment %}
+Complete list of citations including authors, versions, dates, and urls: https://github.com/uva-cs3240-f21/project-b-19/blob/main/citations.md
+In this file:
+- Google Maps Javascript API (https://developers.google.com/maps/documentation/javascript/overview)
+{% endcomment %}
+
+{% block head %}
+<style>
+  #listing-container {
+    height: 80vh;
+    overflow-y: scroll;
+  }
+
+  .listings {
+    list-style-type: none;
+  }
+
+  /* Forcing map height for single column mobile layout */
+  #map {
+    height: 80vh;
+  }
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="my-4">
+  <div class="mt-4 row row-cols-1 row-cols-md-2">
+    <div id="map" class="d-none d-md-block"></div>
+    <div id="listing-container">
+      {% if listings %}
+      <ul class="listings p-0 m-0 row justify-content-center">
+        {% for listing in listings %}
+        <li class="col-12 col-lg-6 p-0">
+          <div class="card m-1 m-sm-2">
+            <a href="{% url 'core:listing-detail' pk=listing.id %}">
+              {% cloudinary listing.image class="w-100 h-auto" format="jpg" width=640 height=360 crop="fill" %}
+            </a>
+            <div class="p-3">
+              <a class="text-reset text-decoration-none" href="{% url 'core:listing-detail' pk=listing.id %}">
+                <h5 class="mb-2">{{ listing.address1 }}</h5>
+              </a>
+              {% listing_rating listing class="mb-2" %}
+              <p class="m-0">{{ listing.num_rooms }} bed, {{ listing.num_bathrooms }} bath</p>
+              <p class="m-0">${{ listing.rent }} / month</p>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p> No housing options listed yet.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<script>
+  // Grab the API key from the template context (passed in by view)
+  const GOOGLE_API_KEY = "{{GOOGLE_API_KEY}}";
+
+  // Load the Google Maps API
+  // Choosing to do it this way rather than in-line so as to be able to construct
+  // the URI with the api key.
+  const mapScriptElement = document.createElement('script');
+  mapScriptElement.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&callback=initMap`
+  mapScriptElement.async = true;
+  document.head.appendChild(mapScriptElement);
+
+  const latitude = 38.0336
+  const longitude = -78.5080
+
+  // Automatically run by the Google Maps API when the script is loaded
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: {
+        lat: latitude,
+        lng: longitude
+      },
+      zoom: 13
+    });
+    /* beautify ignore:start */
+    let listings_serialized = {{ listings_serialized|safe }};
+    /* beautify ignore:end */
+
+    let lastOpenedInfoWindow = new google.maps.InfoWindow({});
+
+    for (listing of listings_serialized) {
+      let marker = new google.maps.Marker({
+        position: {
+          lat: listing.fields.latitude,
+          lng: listing.fields.longitude,
+        },
+        map,
+        title: listing.fields.name
+      });
+
+      let infowindow_content = `
+      <div>
+        <h5><a href="/listing/${listing.pk}">${listing.fields.address1}</a></h5>
+        <h6 class="m-0">${ listing.fields.num_rooms } bed, ${ listing.fields.num_bathrooms } bath</h6>
+        <h6 class="m-0">$${ listing.fields.rent } / month</h6>
+      </div>
+      `
+
+      let infowindow = new google.maps.InfoWindow({
+        content: infowindow_content
+      })
+
+      marker.addListener("click", () => {
+        lastOpenedInfoWindow.close();
+        lastOpenedInfoWindow = infowindow;
+        infowindow.open({
+          anchor: marker,
+          map,
+          shouldFocus: false,
+        });
+      });
+    }
+
+  };
+
+</script>
+
+{% endblock %}

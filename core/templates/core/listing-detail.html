@@ -1,0 +1,183 @@
+{% extends "core/base.html" %}
+{% load bootstrap5 %}
+{% load cloudinary %}
+{% load stars %}
+{% load socialaccount %}
+
+{% comment %}
+Complete list of citations including authors, versions, dates, and urls: https://github.com/uva-cs3240-f21/project-b-19/blob/main/citations.md
+In this file:
+- Google Maps Javascript API (https://developers.google.com/maps/documentation/javascript/overview)
+{% endcomment %}
+
+{% block title %}{{listing.name}}{% endblock %}
+
+{% block content %}
+<style>
+  /* Forcing map height for single column mobile layout */
+  #map {
+    min-height: 400px;
+  }
+
+  .edit-review-icon-container {
+    width: 56px;
+  }
+
+</style>
+
+<div class="mt-4 justify-content-center">
+  <div class="row justify-content-center mb-5">
+    <section class="col-12 col-md-6">
+      <h1>{{listing.name}}</h1>
+      {% listing_rating listing class="mb-4" %}
+      <p class="m-0">{{listing.address1}}, {{listing.city}}, {{listing.state}} {{listing.zipcode}}</p>
+      <p class="m-0">{{listing.num_rooms}} bed, {{listing.num_bathrooms}} bath</p>
+      <p class="mb-4">${{listing.rent}} / month</p>
+      {% cloudinary listing.image format="jpg" width=400 height=300 crop="fill" class="mw-100 h-auto" %}
+    </section>
+    <!-- Vertical spacer for single-col layout on mobile -->
+    <div class="mb-4 d-md-none"></div>
+    <section id="map" class="col-12 col-md-6">></section>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      <section class="mb-5">
+        {% if user.is_authenticated %}
+        <h2 class="mb-4">Submit a review</h2>
+        <div>
+          <form id="review-form" class="mb-4" method="post" autocomplete="off">
+            {% csrf_token %}
+
+            {% bootstrap_field form.rating placeholder="" %}
+            {% bootstrap_field form.review placeholder="" %}
+
+            {% bootstrap_button button_type="submit" content="Submit" %}
+          </form>
+        </div>
+        {% else %}
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <h4>You must be signed in to leave a review.</h4>
+          <a href="{% provider_login_url 'google' next=request.path|urlencode %}" role="button" class="btn btn-lg btn-primary">Sign In</a>
+        </div>
+        {% endif %}
+      </section>
+      <section>
+        <div class="row justify-content-center m-0 mb-5">
+          <div class="col-12 col-md-6 card flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="rating box text-center">
+                <h1>{{reviews.count}}</h1>
+                <h3>Reviews</h3>
+              </div>
+            </div>
+            {% if reviews.count > 0 %}
+            <div class="d-flex flex-column justify-content-center ms-4">
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item">
+                  <h1 class="m-0">{{average}}</h1>
+                </li>
+                <li class="list-group-item">
+                  {% listing_rating listing class="mb-2" %}
+                </li>
+              </ul>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% if reviews.count %}
+        {% for review in reviews %}
+        <div class="card my-2">
+          <div class="d-flex justify-content-center">
+            <div class="d-flex align-items-center me-2 me-md-4">
+              <img class="rounded-circle m-2" src="{{ review.user.socialaccount_set.all.0.get_avatar_url }}" width=85 height=85 />
+            </div>
+            <div class="d-flex flex-column flex-grow-1">
+              <div class="row justify-content-center d-flex">
+                <div class="col d-flex flex-column py-2 justify-content-center">
+                  <h5 class="card-title">{{review.user.first_name}} - {{review.date}}</h5>
+                </div>
+                <div class="col d-flex flex-column py-2 justify-content-center">
+                  {% review_rating review class="mb-2" %}
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">{{review.review}}</p>
+              </div>
+            </div>
+            <div class="edit-review-icon-container d-flex align-items-center justify-content-center me-2">
+              {% if review.pk == previous_review_id %}
+              <svg id="edit-review-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" role="button">
+                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+              </svg>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  // Grab the API key from the template context (passed in by view)
+  const GOOGLE_API_KEY = "{{GOOGLE_API_KEY}}";
+
+  // Load the Google Maps API
+  // Choosing to do it this way rather than in-line so as to be able to construct
+  // the URI with the api key.
+  const mapScriptElement = document.createElement('script');
+  mapScriptElement.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&callback=initMap`
+  mapScriptElement.async = true;
+  document.head.appendChild(mapScriptElement);
+
+  // Automatically run by the Google Maps API when the script is loaded
+  function initMap() {
+    const latitude = parseFloat("{{listing.latitude}}")
+    const longitude = parseFloat("{{listing.longitude}}")
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: {
+        lat: latitude,
+        lng: longitude
+      },
+      zoom: 15
+    });
+    const marker = new google.maps.Marker({
+      position: {
+        lat: latitude,
+        lng: longitude
+      },
+      map
+    });
+  };
+
+  /* beautify ignore:start */
+  const previousReview = {% if previous_review %}{{ previous_review|safe }}{% else %}null{% endif %};
+  /* beautify ignore:end */
+
+  const formElement = document.querySelector('#review-form');
+
+  if (formElement) {
+    formElement.addEventListener("submit", (event) => {
+      if (previousReview !== null) {
+        if (!confirm('You have previously submitted a review for this listing. Would you like to update your review?')) {
+          event.preventDefault();
+        }
+      }
+    });
+
+    document.querySelector("#edit-review-icon").addEventListener("click", (event) => {
+      // Somewhat hacky - the Django JSON serializer formats previousReview.rating as a
+      // string-encoded decimal. This puts it back into an int (to match the select options)
+      // and then back to a string to make it a valid option.
+      formElement.rating.value = Number.parseInt(previousReview.rating).toString();
+      formElement.review.value = previousReview.review;
+
+      formElement.scrollIntoView({
+        block: "center"
+      });
+    });
+  }
+
+</script>
+{% endblock %}

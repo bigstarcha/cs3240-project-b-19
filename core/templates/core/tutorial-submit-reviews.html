@@ -1,0 +1,57 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+{% load static %}
+
+<style>
+  .bottom-spacing {
+    margin-bottom: 1rem;
+  }
+
+</style>
+
+<div class="my-4">
+  <div class="mt-4">
+    <h1> How to Submit a Review </h1>
+
+    <section>
+      <iframe width="960" height="540" src="https://www.youtube.com/embed/zYaDbaug8Qk" controls>
+      </iframe>
+      <p class="bottom-spacing"> Above is a video tutorial which walks through the entire process of submitting a listing. </p>
+    </section>
+
+    <h2>How do you submit a review?</h2>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-listing-page-1.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> To start off, ensure that you are on the home page of the website, where on the left side of the page you can see all of the listing locations
+        on a Google map, and on the right side of the page, you can see all of the listings themselves. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-review-page-1.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> First, find the listing in which you want to submit a review for. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-review-page-2.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> Click on the listing, which should take you to the listing detail page. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-review-page-3.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> Scroll down toward the bottom of the page, where you can find the "Submit a review" section. Enter what you want in the fields provided. </p>
+    </section>
+
+    <section>
+      <img src="{% static 'core/tutorials/how-to-submit-a-new-review-page-4.png'%}" width="960" height="540">
+      </img>
+      <p class="bottom-spacing"> Once you finish writing your review, click the submit button. Your review will now be published. </p>
+    </section>
+  </div>
+</div>
+{% endblock %}

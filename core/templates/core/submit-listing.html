@@ -1,0 +1,138 @@
+{% extends "core/base.html" %}
+{% load bootstrap5 %}
+
+{% comment %}
+Complete list of citations including authors, versions, dates, and urls: https://github.com/uva-cs3240-f21/project-b-19/blob/main/citations.md
+In this file:
+- Google Maps Javascript API (https://developers.google.com/maps/documentation/javascript/overview)
+- Google Geocoding API (https://developers.google.com/maps/documentation/geocoding/overview)
+{% endcomment %}
+
+{% block title %}Submit Listing{% endblock %}
+
+{% block content %}
+<style>
+  /* Forcing map height for single column mobile layout */
+  #map {
+    min-height: 400px;
+  }
+
+</style>
+
+<div class="mt-4 justify-content-center">
+  <h1 class="mb-4">Submit a listing</h1>
+  <div class="row row-cols-1 row-cols-md-2">
+    <form id="submit-form" class="mb-4" method="post" autocomplete="off" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      {% bootstrap_field form.name placeholder="" %}
+      {% bootstrap_field form.address1 placeholder="" %}
+      {% bootstrap_field form.address2 placeholder="" %}
+      {% bootstrap_field form.city placeholder="" %}
+      <div class="row row-cols-1 row-cols-sm-2">
+        {% bootstrap_field form.state placeholder="" wrapper_class="col" %}
+        {% bootstrap_field form.zipcode placeholder="" wrapper_class="col" %}
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2">
+        {% bootstrap_field form.num_rooms placeholder="" wrapper_class="col" %}
+        {% bootstrap_field form.num_bathrooms placeholder="" wrapper_class="col" %}
+      </div>
+      {% bootstrap_field form.rent addon_before="$" placeholder="" %}
+      {{ form.latitude.as_hidden }}
+      {{ form.longitude.as_hidden }}
+      {% bootstrap_field form.image placeholder="" %}
+      {% bootstrap_button button_type="submit" content="Submit" %}
+    </form>
+    <div id="map"></div>
+  </div>
+</div>
+<script>
+  // Grab the API key from the template context (passed in by view)
+  const GOOGLE_API_KEY = "{{GOOGLE_API_KEY}}";
+
+  // Load the Google Maps API
+  // Choosing to do it this way rather than in-line so as to be able to construct
+  // the URI with the api key.
+  const mapScriptElement = document.createElement('script');
+  mapScriptElement.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&callback=initMap`
+  mapScriptElement.async = true;
+  document.head.appendChild(mapScriptElement);
+
+  const address1Element = document.getElementById("{{ form.address1.id_for_label }}");
+  const cityElement = document.getElementById("{{ form.city.id_for_label }}");
+  const stateElement = document.getElementById("{{ form.state.id_for_label }}");
+  const zipcodeElement = document.getElementById("{{ form.zipcode.id_for_label }}");
+  const latitudeElement = document.getElementById("{{ form.latitude.id_for_label }}");
+  const longitudeElement = document.getElementById("{{ form.longitude.id_for_label }}");
+
+  const attemptGeocode = () => {
+    if (!address1Element.value || !cityElement.value || !stateElement.value || !zipcodeElement.value) {
+      return;
+    }
+
+    const geocodeQuery = [
+      address1Element.value,
+      cityElement.value,
+      stateElement.value,
+      zipcodeElement.value
+    ].join(" ");
+
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(geocodeQuery)}&key=${GOOGLE_API_KEY}`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.results.length > 0) {
+          const location = data.results[0].geometry.location;
+          const latitude = location.lat;
+          const longitude = location.lng;
+
+          latitudeElement.value = latitude;
+          longitudeElement.value = longitude;
+
+          const map = new google.maps.Map(document.getElementById("map"), {
+            center: {
+              lat: latitude,
+              lng: longitude
+            },
+            zoom: 15
+          });
+
+          const marker = new google.maps.Marker({
+            position: {
+              lat: latitude,
+              lng: longitude
+            },
+            map
+          });
+        }
+      });
+  };
+
+  for (const element of [address1Element, cityElement, stateElement, zipcodeElement]) {
+    element.addEventListener("blur", attemptGeocode);
+  }
+
+  // Automatically run by the Google Maps API when the script is loaded
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: {
+        lat: 38.0330,
+        lng: -78.5080
+      },
+      zoom: 13,
+    });
+
+    google.maps.event.addListenerOnce(map, 'idle', () => {
+      // Attempt geocode with initial page data (could be filled from a previous submission)
+      attemptGeocode();
+    });
+  };
+
+  document.getElementById("submit-form").addEventListener("submit", (event) => {
+    if (!latitudeElement.value || !longitudeElement.value) {
+      event.preventDefault();
+      new Notyf().error('Please enter a valid address');
+    }
+  });
+
+</script>
+{% endblock %}
